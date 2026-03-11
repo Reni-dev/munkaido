@@ -1,0 +1,15 @@
+h1 {
+    text-align: center;
+    margin-top: 5rem;
+    color: brown;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 5rem;
+}
+
+p {
+    text-align: center;
+    margin-top: 1em;
+    color: black;
+    font-size: 1.3rem;
+}

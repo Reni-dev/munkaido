@@ -1,0 +1,54 @@
+<h1>Munkaidő naplózása</h1>
+
+<form [formGroup]="workTimeForm" (ngSubmit)="registerWork()" class="mt-5">
+
+    <div class="input">
+        <label for="projectName" class="form-label">Projekt neve</label>
+        <span 
+            class="warning ms-3"
+            *ngIf="workTimeForm.controls.projectName.invalid && workTimeForm.controls.projectName.touched">
+            <small>⚠ Kötelező kitölteni! (Min. 3 karakter)</small>
+        </span>
+        <input type="text" class="form-control"
+            formControlName="projectName" id="projectName"
+            [class.input-error]="workTimeForm.controls.projectName.invalid && workTimeForm.controls.projectName.touched">
+    </div>
+    <div class="input">
+        <label for="date" class="form-label">Dátum</label>
+        <span 
+            class="warning ms-3"
+            *ngIf="workTimeForm.controls.date.invalid && workTimeForm.controls.date.touched">
+            <small>⚠ Kötelező kitölteni!</small>
+        </span>
+        <input type="date" class="form-control"
+            formControlName="date" id="date" [max]="today"
+            [class.input-error]="workTimeForm.controls.date.invalid && workTimeForm.controls.date.touched">
+    </div>
+    <div class="input">
+        <label for="workedHours" class="form-label">Ledolgozott órák</label>
+        <span 
+            class="warning ms-3"
+            *ngIf="workTimeForm.controls.workedHours.invalid && workTimeForm.controls.workedHours.touched">
+            <small>⚠ Kötelező kitölteni! (Min. 0.5, max. 12 óra)</small>
+        </span>
+        <input type="number" class="form-control"
+            formControlName="workedHours" id="workedHours"
+            [class.input-error]="workTimeForm.controls.workedHours.invalid && workTimeForm.controls.workedHours.touched">
+    </div>
+    <div class="input">
+        <label for="description" class="form-label">Leírás</label>
+        <span 
+            class="warning ms-3"
+            *ngIf="workTimeForm.controls.description.invalid && workTimeForm.controls.description.touched">
+            <small>⚠ Kötelező kitölteni! (Max. 30 karakter)</small>
+        </span>
+        <input type="text" class="form-control"
+            formControlName="description" id="description"
+            [class.input-error]="workTimeForm.controls.description.invalid && workTimeForm.controls.description.touched">
+    </div>
+
+
+    <button type="submit" class="btn mt-5" [disabled]="workTimeForm.invalid">
+        Munkaidő regisztrálása        
+    </button>
+</form>

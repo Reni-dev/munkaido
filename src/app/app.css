@@ -1,0 +1,23 @@
+@import "bootstrap";
+
+.nav {
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    padding: 2rem;
+    background-color: brown;
+}
+
+a {
+    text-decoration: none;
+    color: blanchedalmond;
+    font-size: 18px;
+    padding: 10px;
+}
+
+a:hover {
+    background-color: blanchedalmond;
+    color: brown;
+    padding: 10px;
+    border-radius: 10px;
+}

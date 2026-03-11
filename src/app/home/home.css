@@ -1,0 +1,14 @@
+h1 {
+    text-align: center;
+    margin-top: 5rem;
+    color: brown;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+p {
+    text-align: center;
+    margin-top: 2rem;
+    color: balck;
+    font-size: 1.3rem;
+}

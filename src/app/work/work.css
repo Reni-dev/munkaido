@@ -1,0 +1,50 @@
+h1 {
+    text-align: center;
+    margin-top: 5rem;
+    color: brown;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+label {
+    color: brown;
+    font-weight: bold;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+span {
+    color: rgb(255, 105, 105);
+    font-weight: bold;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.input-error {
+  border-left: 5px solid rgb(255, 105, 105);
+  box-shadow: 0 0 5px rgba(220, 53, 69, 0.5);
+  padding-left: 0.5rem;
+}
+
+input {
+    color: black;
+}
+
+button {
+    color: blanchedalmond;
+    background-color: brown;
+    border: none;
+}
+
+button:disabled {
+    color: blanchedalmond;
+    background-color: brown;
+    border: none;
+}
+
+button:hover {
+    color: brown;
+    background-color: blanchedalmond;
+}
